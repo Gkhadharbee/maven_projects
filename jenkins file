@@ -7,5 +7,10 @@ pipeline {
                 sh 'mvn --version'
             }
         }
+        stage('finish message'){
+            steps {
+                echo "successfully completed"
+            }
+        }
     }
 }
